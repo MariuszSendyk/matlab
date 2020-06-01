@@ -1,0 +1,18 @@
+% Przedmiot: Techniki Obliczeniowe 
+% Kierunek studiów: Mechatronika 
+% Semestr: 2
+% Rok akademicki: 2019/2020
+% Data (dzień-miesiąc-rok): 02-06-2020
+%
+% Imię:             Mariusz
+% Nazwisko:         Sendyk
+% Numer albumu ZUT: 46767
+
+dane0=load("dane0.txt");
+dane1=load("dane1.txt");
+fileID = fopen('dane2.txt');
+dane2 = textscan(fileID,'%s %s %f32 %d8 %u %f %f %s %f');
+fclose(fileID);
+dane3 = fileread( 'dane3.txt' ) ;
+ dane3 = regexprep( dane3, '/\*.*?\*/', '' ) ;    
+ dane3 = regexprep( dane3, '//.*?(\r)?\n', '$1\n' ) ;
