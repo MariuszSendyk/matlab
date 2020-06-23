@@ -20,7 +20,7 @@ N = d*1000; % Częstość próbkowania co 1 mm
 
 h = linspace(0,d,N); % [m] Głębokość zanurzenia od powierzchni do całkowitego zanurzenia bańki
 
-V = ((pi.*h.^2)/3).*(3.*r-h); % [m^3] objętość zanurzonej części bańki
+V = ((pi*h.^2)/3).*(3*r-h); % [m^3] objętość zanurzonej części bańki
 
 Fw = p*g*V; % [N] Siła wyporu
 
